@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Audio Warp</title>
+
+        <style>
+            #container {
+                background-color: silver;
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+                padding: 3% 5%;
+            }
+
+            .childobj {
+                display: inline;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <input class="childobj" type="file" id="file" value=""/>
+            <input type="button" id="btnPlay" value="Play"/>
+            <input type="button" id="btnStop" value="Stop"/>
+            <br/>
+            <input class="childobj" style="width:85%;" type="range" name="speed" id="speed" min="0" max="100" value="100"/>
+            <input class="childobj" style="width:10%;" type="number" name="speedT" id="speedT" min="0" max="100" value="100"/>
+        </div>
+
+        <script src="audio-wrapper.js" type="text/javascript" defer=""></script>
+        <script src="flux-capacitor.js" type="text/javascript" defer=""></script>
+    </body>
+</html>
