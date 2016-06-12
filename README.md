@@ -46,3 +46,15 @@ I do have one limitation and that is that your code must be well tested. I will 
 **How did you come up with the name?**
 
 I actually took the name from "*Back to the Future*." The device that enables them to travel through time was called the Flux Capacitor, and I decided this would be the perfect fit for the application, since all transcription programs allow you to change the speed of playback time.
+
+---
+
+## License
+
+Flux Capacitor is licensed under the **GNU General Public License v3.0**. Just to give a summary of what this means
+
+* Do whatever you want with it, including commercial distribution
+* Distribute your version/application under the same license
+* Provide the license with distribution
+* Imply any changes made to original
+* I, nor any other contributor can be held liable for damage that occurred during the use, or caused by the software. Basically don't go trying to sue people!
