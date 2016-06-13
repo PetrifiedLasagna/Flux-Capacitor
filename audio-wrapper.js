@@ -38,6 +38,7 @@ class AudioEngine {
   fileCallback (event){
     console.log("file callback");
     this.buffer = null;
+    this.decodedFile = null;
     if(this.source){
       this.source.stop(0);
     }
@@ -94,20 +95,25 @@ class AudioEngine {
     }
   }
 
+  newBuffer(numChannels, length, sampleRate){
+    return audioCtx.createBuffer(numChannels, length, sampleRate);
+  }
+
   // Play data that is in buffer
-  play(){
+  play(endCallback){
     if(this.buffer){
-      if(this.source){
-        this.source.stop(0);
-      }
       var source = audioCtx.createBufferSource();
 
       source.buffer = this.buffer;
       source.connect(audioCtx.destination);
-      source.start(0);
+      if(endCallback){
+        source.onended = endCallback;
+      }
+
+      source.start();
 
       this.source = source;
-      console.log("play");
+      //console.log("play");
     }
   }
 
