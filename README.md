@@ -4,7 +4,7 @@
 
 Check out the live demo on my scripting site.
 
-**(Alpha 0.0.4)**
+**(Always runs the latest version)**
 <http://notebookinc.byethost15.com/js/flux-capacitor/>
 
 ---
